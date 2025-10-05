@@ -1,7 +1,6 @@
 from js import document 
 from pyodide.ffi import  
 
-#  Function to compute the average of two quiz scores
 def compute_average(event):
   
     score1 = float(document.getElementById("score1").value or 0)
@@ -22,5 +21,6 @@ def compute_average(event):
 
 button = document.getElementById("compute-btn")
 button.addEventListener("click", create_proxy(compute_average))
+
 
 
